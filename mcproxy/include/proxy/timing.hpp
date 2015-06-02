@@ -45,7 +45,7 @@
 class worker;
 
 typedef std::tuple<const worker*, std::shared_ptr<proxy_msg>> timing_db_value;
-typedef std::chrono::time_point<std::chrono::monotonic_clock> timing_db_key;
+typedef std::chrono::time_point<std::chrono::steady_clock> timing_db_key;
 typedef std::map<timing_db_key, timing_db_value> timing_db;
 typedef std::pair<timing_db_key, timing_db_value> timing_db_pair;
 

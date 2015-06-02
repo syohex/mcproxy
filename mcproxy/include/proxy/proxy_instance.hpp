@@ -99,7 +99,7 @@ private:
     std::unique_ptr<routing_management> m_routing_management;
 
     //to match the proxy debug output with the wireshark time stamp
-    const std::chrono::time_point<std::chrono::monotonic_clock> m_proxy_start_time;
+    const std::chrono::time_point<std::chrono::steady_clock> m_proxy_start_time;
 
     std::set<upstream_infos> m_upstreams;
 
